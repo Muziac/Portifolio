@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Roboto:wght@100&family=Tilt+Warp&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+
+    text-decoration: none;}
+
+    body{
+        overflow-x:hidden;
+        background-color: #222;
+    }
+    
+    .hero-header{
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        background: #222
+    }
+    .wrapper{
+        width: 1640px;
+        max-width: 95%;
+        margin: 0 auto;
+        padding: 0 20px;
+
+    }
+   
+    header{
+        padding: 40px 0 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+    
+    .logo{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo i{
+        height: 45px;
+        width: 45px;
+        background-color: #8c9eff;
+        border-radius: 50%;
+        color: #ffff;
+        font-weight:700 ;
+        font-size: 1.5rem;
+        padding: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        text-align: center;
+
+    }
+    .logo .logo-text{
+        font-size: 24px;
+        font-weight: 500;
+        color: #fff;
+    }
+    
+    nav .togglebtn{
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 45px;
+        right: 3%;
+        z-index: 5;
+        cursor: pointer;
+       
+       
+
+    }
+    nav .togglebtn span{
+        display: block;
+        background-color: #8c9eff;
+        margin: 5px 0px;
+        width: 30px;
+        height: 2px ;
+        transition: 0.3s;
+        transition-property: transform, opacity;
+        display: none;
+        
+        
+    }
+    nav .navlinks{
+        list-style-type: none;
+    }
+    nav .navlinks li{
+        display: inline-block;
+
+    }
+    nav .navlinks li a{
+        margin-right: 2.5rem;
+        color: #fff;
+        position: relative;
+        transition: 0.5s;
+        
+    }
+    nav .navlinks li a:hover{
+        color: #8c9eff;
+        transform: scale(1.5);
+        
+       
+
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 8rem;
+    }
+    .container .hero-pic{
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 5px 7px 25px rgb(0,0,0,0.5);
+        animation: fadeInLeft;
+        animation-duration: 1.5s;
+        
+    }
+    
+    .hero-pic img{
+        height: 100%;
+        width: 100%;
+        transition: 0.8s;
+        
+    }
+    .hero-pic img:hover{
+        transform: scale(1.07);
+    }
+    .hero-text{
+        max-width: 700px;
+        flex-direction: column;
+    }
+    .hero-text p{
+        animation: fadeInRight;
+        animation-duration: 1.8s;
+    }
+    .hero-text h5{
+        color: #fff;
+        font-size: 1.3rem;
+        animation: fadeInDown;
+        animation-duration: 1.8s;
+        
+    }
+    
+
+
+    .hero-text h5 span{
+        color: #8c9eff;
+        font-size: 1.3rem;
+    }
+    .hero-text h1{
+        color: #8c9eff;
+        font-size: 3.0rem;
+        animation: fadeInRight;
+        animation-duration: 1.4s;
+        
+        
+    }
+    .hero-text p{
+        color: #fff;
+    }
+    
+    .btn-group{
+        margin: 45px 0;
+        animation: fadeInRight;
+        animation-duration: 1.4s;
+        
+    }
+    .btn-group .btn{
+        border-color: #fff;
+        color: #fff;
+        background-color: #333;
+        padding: 12px 25px;
+        margin: 5px 0px;
+        margin-right: 7px;
+        border-radius: 30px;
+        border: 2px solid #fff;
+        box-shadow: 0 10px 10px -8 rgb(0 0 0 /78%)
+
+    }
+    .btn{
+    transition: 0.8s;
+    transform: scale(3.0);
+    }
+
+    .btn.contact:hover{
+     background-color:#fff;
+    color: #333;
+    transition: 0.8s;
+    transform: scale(3.0);
+
+    }
+   .btn.active:hover{
+    background-color: #8c9eff;
+    color: #fff;
+    transition: 0.8s;
+    transform: scale(3.0);
+
+   }
+
+
+    .btn.active{
+        border-color: #8c9eff;
+    }
+    
+    .hero-text .social i{
+        margin-right: 10px;
+        color: #8c9eff;
+        font-size: 3.0vh;
+        transition: 1.5s;
+        transform: rotate(360deg);
+        animation: fadeInUp;
+        animation-duration: 1.5s;
+    }
+        
+    .hero-text .social i:hover{
+        color: #fff;
+        transition: 1.5s;
+        transform: rotate(720deg);
+        
+        
+        
+    }
+
+
+    @media(max-width:1280px)
+    
+    {
+
+        .hero-text h5 span{
+            font-size: 1.1rem;
+            
+
+        
+        }
+        .hero-text h1{
+
+            font-size: 2.3rem;
+        }
+        .container{
+            flex-direction: column;
+            padding-top:2rem ;
+        }
+        .hero-text {
+            padding: 40px 0px;
+        }
+
+        nav .togglebtn
+        {
+            display: initial;
+        }
+
+        .click {
+            top:45px;  
+        }
+
+        .click span{
+            position: absolute;
+            margin-top:12px
+        }
+        .click span:first-child{
+             transform: rotate(-40deg);       
+        }
+        .click span:nth-child(2){
+
+        opacity: 0;
+        margin: 0;
+        }
+        .click span:last-child{
+            transform: rotate(45deg);
+            top: 0;
+        }
+        nav .navlinks{
+            display: none;
+            position: absolute;
+            top: 80px;
+            right:-100%;
+            bottom: 0;
+            width: 60%;
+            height: 100vh;
+            background-color: #222;
+            z-index: 3;
+            box-shadow: 5px 13px 30px rgb(0,0,0,0.1);
+            transition: 0.5;
+            padding: 25px 0px;
+        
+        }
+        nav .navlinks li{
+            display: block;
+            display: n;
+        }
+        nav .navlinks li a{
+            display: block;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        nav .navlinks.open{
+            right:0;
+
+        }
+
+    }
+    @media (max-width:768px){
+
+        .container{
+            flex-direction: column;
+            padding-top:2rem ;
+        }
+        .hero-text {
+            padding: 40px 0px;
+        }
+    }
+
+    @media (max-width:450px){ 
+
+
+        .container{
+            flex-direction: column;
+            padding-top:2rem ;
+        }
+        .hero-text {
+            padding: 40px 0px;
+            
+        }
+        .container .hero-pic{
+            width:30vh;
+            height: 30vh;
+    }
+}
+
+
+
+
+    
+
+
+        
+
+
